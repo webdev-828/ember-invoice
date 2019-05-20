@@ -1,0 +1,7 @@
+{
+  "name": "ember-invoice-manager",
+  "dependencies": {
+    "Faker": "^4.1.0",
+    "bootstrap-datepicker": "^1.7.1"
+  }
+}

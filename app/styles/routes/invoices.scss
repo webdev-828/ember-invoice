@@ -1,0 +1,180 @@
+// Invoice route styles
+
+.inner-table-wrapper {
+  margin-top: 15px;
+  border-radius: 3px;
+
+  .table {
+    background-color: $white;
+  }
+}
+
+.models-table-wrapper {
+  .columns-dropdown {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .invoice-status {
+    font-size: 12px;
+    display: block;
+    padding: 6px 10px;
+  }
+
+  .table {
+    tr.danger {
+      .payment-due-date {
+        font-weight: bold;
+      }
+    }
+
+    .total {
+      text-align: right;
+    }
+  }
+}
+
+.invoice-form,
+.invoice-settings {
+  .image-dropzone {
+    padding: 15px;
+    border: 1px solid $gray-lighter;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  .invoice-logo {
+    position: relative;
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .ember-power-select-trigger {
+    height: 34px;
+    line-height: 32px;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-height: 45px;
+    overflow: auto;
+  }
+
+  .item-list {
+    margin-bottom: 0;
+
+    .invoice-item-amount {
+      text-align: right;
+    }
+  }
+
+  .total-list {
+    margin-bottom: 0;
+    tr:first-child {
+      td {
+        border-top: none;
+      }
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+  }
+}
+
+
+.invoice-view {
+  #header {
+    margin-top: 10px;
+  
+  }
+  
+  .logo {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .invoice-title {
+    text-align: right;
+  }
+
+  .invoice-address,
+  .customer-address,
+  .invoice-definition,
+  .data-box {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .invoice-date,
+  .invoice-period,
+  .invoice-due {
+    display: block;
+    text-align: right;
+  }
+
+  .company-address,
+  .invoice-date {
+    margin-top: -3px;
+    display: block;
+  }
+
+  .invoice-address {
+    text-align: right;
+  }
+
+  .table {
+    margin-bottom: 30px;
+  }
+
+  .invoice-data>tbody>tr>td, 
+  .invoice-data>tbody>tr>th, 
+  .invoice-data>tfoot>tr>td, 
+  .invoice-data>tfoot>tr>th, 
+  .invoice-data>thead>tr>td, 
+  .invoice-data>thead>tr>th {
+    padding: 0 0 2px 0;
+    border-top: 0;
+  }
+
+
+  .product-table>tbody>tr>td, 
+  .product-table>tbody>tr>th, 
+  .product-table>tfoot>tr>td, 
+  .product-table>tfoot>tr>th, 
+  .product-table>thead>tr>td, 
+  .product-table>thead>tr>th {
+    padding: 16px;
+    border-top: 1px solid $light-gray;
+  }
+
+
+
+  .table th:nth-child(2),
+  .table td:nth-child(2),
+  .table tfoot td:first-child {
+    text-align: right;
+  }
+
+  .table tfoot tr:first-child td {
+    border-top: 2px solid $light-gray;
+  }
+
+  .product-table td:last-child {
+    width: 10%;
+  }
+
+  .sum-total td {
+    border-bottom: 2px solid $light-gray;
+  }
+
+}

@@ -1,0 +1,28 @@
+---
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+
+language: node_js
+node_js:
+  - "6"
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.npm
+
+before_install:
+  - npm config set spin false
+  - npm install -g phantomjs-prebuilt && npm install -g yarn && npm install -g bower
+  - phantomjs --version
+  - bower --version
+
+install:
+  - bower install
+  - yarn
+
+script:
+  - yarn run build

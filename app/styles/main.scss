@@ -1,0 +1,32 @@
+// main styles
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app-container {
+  background-color: $light-gray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.main-container {
+  padding: 15px 30px;
+  float: left;
+  width: calc(100% - 240px);
+  margin-left: 240px;
+
+  &.pdf-view {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.route-headline {
+  border-bottom: 2px solid $medium-light-gray;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}

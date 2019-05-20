@@ -1,0 +1,49 @@
+// sidebar styles
+
+.sidebar-container {
+  background-color: $black;
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  box-shadow: $drop-shadow;
+  color: $white;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 30px 30px 15px;
+  }
+
+  .btn-primary {
+    margin: 15px 30px 30px;
+    display: block;
+  }
+
+  .nav {
+    padding: 0 30px;
+
+    & > li {
+      margin-top: 10px;
+    }
+    
+    a {
+      color: $medium-light-gray;
+      // transition: border-color .25s ease-in-out;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+  }
+}
